@@ -18,7 +18,7 @@ import retrofit2.http.POST;
 
 public class ApiClient {
 
-    public static final String BASE_URL = "http://instalink.yasinf.ir/";
+    public static final String BASE_URL = "http://website.com";
     public static final String INSTA_BASE = "https://api.instagram.com/";
     private static Retrofit retrofit = null;
     private static Retrofit retrofitInsta = null;
