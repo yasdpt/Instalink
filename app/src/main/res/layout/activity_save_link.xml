@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".SaveLinkActivity"
+    android:id="@+id/saveLinkMainLayout">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveAppBarLayout"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/saveLinkToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/saveAppBarLayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/ticket_back"
+            android:padding="10dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edTitleSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                app:met_underlineColor="@color/colorPrimaryDark"
+                app:met_baseColor="@color/colorPrimaryDark"
+                app:met_textColor="#000000"
+                app:met_primaryColor="@color/colorPrimaryDark"
+                app:met_floatingLabel="highlight"
+                android:layoutDirection="ltr"
+                android:hint="عنوان"
+                app:met_floatingLabelText="عنوان"
+                app:met_singleLineEllipsis="true"/>
+
+
+            <Spinner
+                android:id="@+id/saveSpinner"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edUrlSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                app:met_underlineColor="@color/colorPrimaryDark"
+                app:met_baseColor="@color/colorPrimaryDark"
+                app:met_textColor="#000000"
+                app:met_primaryColor="@color/colorPrimaryDark"
+                app:met_floatingLabel="highlight"
+                android:layoutDirection="ltr"
+                android:hint="http://"
+                android:gravity="top|start"
+                app:met_floatingLabelText="لینک"
+                android:lines="4"/>
+
+            <Button
+                android:id="@+id/btnSaveLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_shape"
+                android:text="ثبت لینک"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

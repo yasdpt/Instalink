@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#70c1b3</color>
+    <color name="colorPrimaryDark">#247ba0</color>
+    <color name="colorAccent">#247ba0</color>
+    <color name="DarkBlue">#247ba0</color>
+    <color name="PeeColor">#f3ffbd</color>
+    <color name="color1">#b2dbbf</color>
+    <color name="color2">#70c1b3</color>
+    <color name="color3">#FF1654</color>
+    <color name="light_gray">#eeeeee</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+</resources>
